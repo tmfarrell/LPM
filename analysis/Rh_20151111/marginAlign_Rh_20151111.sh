@@ -1,9 +1,6 @@
 #!/bin/bash
-#
-# aligns XP12_lambda.fa reference with XP12_unMC_lambda_reads.fasta generated
-# from poretools using marginAlign
 
-MARGIN_ALIGN="../ont_dap/marginAlign"
+MARGIN_ALIGN="../../tools/ont_dap/marginAlign"
 
 # run marginAlign
 bash $MARGIN_ALIGN/marginAlign Rh_20151111.fastq ../simulation/chr1.fasta Rh_20151111_mA.sam --jobTree ./jobTree 2> Rh_20151111_mA_err.txt
