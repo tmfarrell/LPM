@@ -1,2 +1,2 @@
 ## LPM
- This is work completed during my bioinformatics MS internship project.
+ Work completed during my bioinformatics MS internship project.
