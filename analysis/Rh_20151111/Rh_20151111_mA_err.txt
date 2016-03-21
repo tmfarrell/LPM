@@ -1,0 +1,25 @@
+Got message from job at time: 1447546422.73 : Going to chain sam file: /Users/tfarrell/Code/lpm/analysis/Rh_20151111/jobTree/jobs/gTD0/tmp_frZTYNjgf2/temp.sam
+Got message from job at time: 1447546422.73 : Going to realign sam file: /Users/tfarrell/Code/lpm/analysis/Rh_20151111/jobTree/jobs/gTD1/tmp_SfRgR8Ngfp/temp.sam to create output sam file: Rh_20151111_mA.sam     with match gamma 0.5 and gap gamma 0.0 and model /Users/tfarrell/Code/lpm/analysis/ont_dap/marginAlign/src/margin/mappers/last_hmm_20.txt
+The job seems to have left a log file, indicating failure: /Users/tfarrell/Code/lpm/analysis/Rh_20151111/jobTree/jobs/job
+Reporting file: /Users/tfarrell/Code/lpm/analysis/Rh_20151111/jobTree/jobs/log.txt
+log.txt:	---JOBTREE SLAVE OUTPUT LOG---
+log.txt:	Traceback (most recent call last):
+log.txt:	  File "/Users/tfarrell/Code/lpm/analysis/ont_dap/marginAlign/submodules/jobTree/src/jobTreeSlave.py", line 271, in main
+log.txt:	    defaultMemory=defaultMemory, defaultCpu=defaultCpu, depth=depth)
+log.txt:	  File "/Users/tfarrell/Code/lpm/analysis/ont_dap/marginAlign/submodules/jobTree/scriptTree/stack.py", line 153, in execute
+log.txt:	    self.target.run()
+log.txt:	  File "/Users/tfarrell/Code/lpm/analysis/ont_dap/marginAlign/submodules/jobTree/scriptTree/target.py", line 197, in run
+log.txt:	    func(*((self,) + tuple(self.args)), **self.kwargs)
+log.txt:	  File "/Users/tfarrell/Code/lpm/analysis/ont_dap/marginAlign/src/margin/marginAlignLib.py", line 345, in realignSamFile3TargetFn
+log.txt:	    ops += map(lambda op : (op.type, op.length), pA.operationList)
+log.txt:	AttributeError: 'NoneType' object has no attribute 'operationList'
+log.txt:	Exiting the slave because of a failed job on host Ts-MacBook-Pro.local
+log.txt:	Due to failure we are reducing the remaining retry count of job /Users/tfarrell/Code/lpm/analysis/Rh_20151111/jobTree/jobs/job to 0
+log.txt:	We have set the default memory of the failed job to 2147483648 bytes
+Job: /Users/tfarrell/Code/lpm/analysis/Rh_20151111/jobTree/jobs/job is completely failed
+Traceback (most recent call last):
+  File "../ont_dap/marginAlign/src/margin/marginAlign.py", line 91, in <module>
+    main()
+  File "/Users/tfarrell/Code/lpm/analysis/ont_dap/marginAlign/src/margin/marginAlign.py", line 87, in main
+    raise RuntimeError("Got failed jobs")
+RuntimeError: Got failed jobs
